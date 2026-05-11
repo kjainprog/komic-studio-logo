@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Komic Studio | Logo Showcase</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1b0036, #45006d);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .logo-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .logo-container {
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .light-bg {
+            background: white;
+        }
+
+        .dark-bg {
+            background: #121212;
+        }
+
+        .logo-placeholder {
+            max-width: 220px;
+            max-height: 220px;
+            object-fit: contain;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .usage-card {
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Komic Studio</h1>
+            <p class="lead">
+                Filling a space with my creativity ✨
+            </p>
+            <p>
+                A creative brand identity showcasing the polished logo system
+                for digital and print use.
+            </p>
+        </div>
+    </section>
+
+    <!-- Logo Variations -->
+    <section class="container py-5">
+
+        <h2 class="text-center section-title">
+            Logo Configurations
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Black & White -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card logo-card h-100">
+                    <div class="logo-container light-bg">
+                        <img src="images/logo-bw.png"
+                             class="logo-placeholder"
+                             alt="Black and White Logo">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5>Black & White</h5>
+                        <p>
+                            Used for grayscale printing,
+                            documents, and simplified branding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Version -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card logo-card h-100">
+                    <div class="logo-container light-bg">
+                        <img src="images/logo-color.png"
+                             class="logo-placeholder"
+                             alt="Color Logo">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5>Color Version</h5>
+                        <p>
+                            Primary brand logo for websites,
+                            portfolios, and social media.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reverse Logo -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card logo-card h-100">
+                    <div class="logo-container dark-bg">
+                        <img src="images/logo-reverse.png"
+                             class="logo-placeholder"
+                             alt="Reverse Logo">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5>Reverse Version</h5>
+                        <p>
+                            Designed for dark backgrounds
+                            while maintaining visibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favicon -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card logo-card h-100">
+                    <div class="logo-container light-bg">
+                        <img src="images/favicon.png"
+                             class="logo-placeholder"
+                             alt="Favicon">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5>Favicon</h5>
+                        <p>
+                            Small icon version used in browser tabs
+                            and bookmarks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Background Testing -->
+    <section class="container py-5">
+        <h2 class="text-center section-title">
+            Light & Dark Background Testing
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="p-5 rounded-4 text-center light-bg shadow">
+                    <h5 class="mb-4">Light Background</h5>
+
+                    <img src="images/logo-color.png"
+                         class="img-fluid"
+                         style="max-width:250px;"
+                         alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="p-5 rounded-4 text-center dark-bg shadow">
+                    <h5 class="text-white mb-4">
+                        Dark Background
+                    </h5>
+
+                    <img src="images/logo-reverse.png"
+                         class="img-fluid"
+                         style="max-width:250px;"
+                         alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="container py-5">
+        <h2 class="text-center section-title">
+            Logo Usage Guidelines
+        </h2>
+
+        <div class="card usage-card p-4">
+
+            <h5>Primary Logo Usage</h5>
+            <p>
+                The color logo is the preferred version
+                for digital platforms, portfolios,
+                social media, and creative branding.
+            </p>
+
+            <h5>Black & White Version</h5>
+            <p>
+                Used when color printing is unavailable
+                or for minimal branding requirements.
+            </p>
+
+            <h5>Reverse Version</h5>
+            <p>
+                Used on dark backgrounds to maintain
+                readability and brand consistency.
+            </p>
+
+            <h5>Favicon Usage</h5>
+            <p>
+                A simplified version of the logo
+                designed for browser tabs and small icons.
+            </p>
+
+            <h5>Configuration Rules</h5>
+            <ul>
+                <li>Do not stretch or distort the logo.</li>
+                <li>Maintain clear spacing around the logo.</li>
+                <li>Use the reverse logo only on dark backgrounds.</li>
+                <li>Use the favicon for small digital applications.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <footer class="text-center">
+        © 2026 Komic Studio | Creative Brand Identity
+    </footer>
+
+</body>
+</html>
