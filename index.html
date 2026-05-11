@@ -16,28 +16,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --page-bg-start: #120223;
+            --page-bg-end: #3a0f6d;
+            --surface: rgba(255,255,255,0.08);
+            --surface-strong: rgba(255,255,255,0.12);
+            --surface-light: #f7efff;
+            --surface-dark: #1b0530;
+            --text: #f5eefc;
+            --text-muted: #d9c5ff;
+            --accent: #9c4dff;
+            --accent-strong: #7209b7;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #240046, #7209b7, #c77dff);
+            background: linear-gradient(135deg, var(--page-bg-start), var(--page-bg-end));
+            color: var(--text);
             min-height: 100vh;
         }
 
         .hero-section {
-            background: linear-gradient(135deg, #1b0036, #45006d);
-            color: white;
+            background: linear-gradient(135deg, rgba(55, 0, 94, 0.95), rgba(114, 9, 183, 0.95));
+            color: var(--text);
             padding: 80px 0;
+        }
+
+        .hero-section .lead,
+        .hero-section p {
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto;
         }
 
         .logo-card {
             border: none;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            border-radius: 24px;
+            background: var(--surface);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
         }
 
         .logo-card:hover {
             transform: translateY(-8px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22);
         }
 
         .logo-container {
@@ -49,11 +72,13 @@
         }
 
         .light-bg {
-            background: white;
+            background: var(--surface-light);
+            color: #26104a;
         }
 
         .dark-bg {
-            background: #121212;
+            background: var(--surface-dark);
+            color: var(--text);
         }
 
         .logo-placeholder {
@@ -65,18 +90,61 @@
         .section-title {
             font-weight: 700;
             margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 64px;
+            height: 4px;
+            margin: 16px auto 0;
+            border-radius: 999px;
+            background: var(--accent);
+        }
+
+        .card-body {
+            color: var(--text);
+        }
+
+        .card-body h5 {
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .card-body p {
+            color: var(--text-muted);
         }
 
         .usage-card {
-            border-radius: 20px;
+            border-radius: 24px;
             border: none;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .usage-card h5 {
+            color: var(--text);
+            margin-top: 1rem;
+        }
+
+        .usage-card p,
+        .usage-card li {
+            color: var(--text-muted);
+        }
+
+        .usage-card ul {
+            padding-left: 1.2rem;
+        }
+
+        .usage-card li {
+            margin-bottom: 0.5rem;
         }
 
         footer {
-            background: #111;
-            color: white;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.28);
+            color: var(--text-muted);
+            padding: 24px 0;
         }
     </style>
 </head>
